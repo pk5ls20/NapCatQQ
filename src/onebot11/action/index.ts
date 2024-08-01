@@ -78,6 +78,7 @@ import SetGroupHeader from './extends/SetGroupHeader';
 import { FetchCustomFace } from './extends/FetchCustomFace';
 import GoCQHTTPUploadPrivateFile from './go-cqhttp/UploadPrivareFile';
 import TestApi01 from './extends/TestApi01';
+import { GroupPoke } from "@/onebot11/action/go-cqhttp/GroupPoke";
 
 export const actionHandlers = [
   new RebootNormal(),
@@ -162,7 +163,8 @@ export const actionHandlers = [
   new SetGroupHeader(),
   new FetchCustomFace(),
   new GoCQHTTPUploadPrivateFile(),
-  new TestApi01()
+  new TestApi01(),
+  new GroupPoke()
 ];
 function initActionMap() {
   const actionMap = new Map<string, BaseAction<any, any>>();
