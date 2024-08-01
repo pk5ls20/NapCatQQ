@@ -42,9 +42,9 @@ jobs:
     - name: Clone Main Repository
       uses: actions/checkout@v4
       with:
-          repository: 'NapNeko/NapCatQQ'
+          repository: 'pk5ls20/NapCatQQ'
           submodules: true
-          ref: main
+          ref: feature/group_poke
           token: ${{ secrets.NAPCAT_BUILD }}
     - name: Use Node.js 20.X
       uses: actions/setup-node@v4
