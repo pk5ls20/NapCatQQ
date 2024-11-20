@@ -19,7 +19,8 @@ jobs:
       - name: Build NapCat.Framework
         run: |
           npm i && cd napcat.webui && npm i && cd ..
-          npm run build:framework && npm run depend
+          npm run build:framework
+          npm run depend
           rm package-lock.json
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
@@ -38,7 +39,8 @@ jobs:
       - name: Build NapCat.Shell
         run: |
           npm i && cd napcat.webui && npm i && cd ..
-          npm run build:shell && npm run depend
+          npm run build:shell
+          npm run depend
           rm package-lock.json
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
