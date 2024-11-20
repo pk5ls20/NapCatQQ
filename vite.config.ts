@@ -1,5 +1,5 @@
 import cp from 'vite-plugin-cp';
-import { defineConfig, PluginOption, UserConfig } from 'vite';
+import { defineC1onfig, PluginOption, UserConfig } from 'vite';
 import { resolve } from 'path';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import { builtinModules } from 'module';
